@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Lato', sans-serif;
+}
+
+main{
+   padding: 50px;
+   overflow: auto;
+}
+
+.button a{
+   padding: 10px;
+   background-color: #141E61;
+   color: #EEEEEE;
+   text-decoration: none;
+}
+
+.button a:hover{
+   background-color: #0F044C;
+   text-decoration: underline;
+   transition: all 0.5s ease;
+}
+
+.content-list{
+   padding-left: 30px;
+   margin-bottom: 10px;
+}
+
+p{
+   margin-bottom: 10px;
+}
+
+#versailles{
+   padding-left: 30px;
+}
+
+#navBar{
+   display: flex;
+   background-color: #141E61;
+   color: #EEEEEE;
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px 50px;
+   position: sticky;
+   top: 0;
+   box-shadow: 0px -8px 6px 10px rgba(0,0,0,0.75);
+}
+
+#navBar h1{
+   font-weight: 400;
+}
+
+#navBar h1 span{
+   font-weight: 900;
+   color: rgb(226, 85, 85);
+}
+
+nav li{
+   display: inline-block;
+   margin-right: 10px;
+   position: relative;
+}
+
+nav li:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+#dropdown li{
+   display: block;
+   margin: 5px 0;
+}
+
+#dropdown{
+   font-size: 14px;
+   display: none;
+   position: absolute;
+   width: 200%;
+   background-color: #253181;
+   box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+   padding: 10px;
+   top: 235%;
+}
+
+#dropdown.active{
+   display: block;
+}
+
+nav a{
+   color: #EEEEEE;
+   text-decoration: none;
+}
+
+#welcome,
+#main-title{
+   color: #141E61;
+   margin-bottom: 20px;
+}
+
+#selection{
+   float: left;
+   width: 75%;
+}
+
+.content{
+   float: left;
+   font-size: 17px;
+   color: rgb(75, 75, 75);
+   line-height: 1.5em;
+   width: 75%;
+}
+
+.content h3{
+   margin-bottom: 10px;
+   color: black;
+}
+
+.content h2{
+   color: black;
+}
+
+.content-image{
+   width: 100%;
+   max-height: 400px;
+   object-fit: cover;
+   object-position: center;
+   margin: 0px 0px 10px 0px;
+}
+
+.top{
+   object-position: top;
+}
+
+hr{
+   margin: 10px 0px;
+   border-width: 0;
+   color: rgb(177, 177, 177);
+   background-color: rgb(177, 177, 177);
+   height: 1px;
+}
+
+.preview{
+   margin: 0 auto;
+}
+
+.preview p{
+   line-height: 1.5em;
+   font-size: 17px;
+   color: rgb(75, 75, 75);
+}
+
+.card{
+   border: 1px solid rgb(177, 177, 177);
+   border-radius: 10px;
+   box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+   padding: 60px;
+   margin-bottom: 20px;
+}
+
+.selection-image{
+   width: 100%;
+   max-height: 400px;
+   object-fit: cover;
+   object-position: top;
+}
+
+aside{
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+}
+
+#contact li{
+   display: inline-block;
+   list-style: none;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-top: 10px;
+}
+
+#contact img{
+   width: 40px;
+   height: 40px;
+}
+
+#contact img:hover{
+   filter: brightness(60%);
+   transition: all 0.5s ease;
+}
+
+.biodata{
+   text-align: center;
+}
+
+.biodata h1{
+   color: #141E61;
+}
+
+.biodata table{
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+   font-size: 14px;
+}
+
+.biodata table th{
+   padding-right: 10px;
+}
+
+#profile-picture{
+   width: 200px;
+   border-radius: 180px;
+   margin: 10px;
+}
+
+footer{
+   padding: 40px;
+   font-weight: bold;
+   text-align: center;
+   background-color: #0F044C;
+   color: #EEEEEE;
+}
+
+@media screen and (max-width: 1000px) {
+   main{
+      padding: 10px;
+   }
+
+   .content, #selection, aside{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+   }
+
+   .card{
+      padding: 20px;
+   }
+
+   .biodata table{
+      font-size: 10px;
+   }
+
+   #profile-picture{
+      width: 120px; 
+   }
+
+   #navBar{
+      padding: 16px 16px;
+   }
+
+   #dropdown{
+      right: 0;
+   }
+
+   footer{
+      margin-top: 150px;
+   }
+}
